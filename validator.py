@@ -7,7 +7,7 @@ class DataValidator:
     A class for validating personal data entries such as emails, phone numbers, dates, and URLs.
     """
 
-    def validate_email(email):
+    def validate_email(self, email):
         """
         Validates if the provided string is a valid email address.
 
@@ -20,7 +20,7 @@ class DataValidator:
         pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'  # Regular expression pattern for validating email
         return bool(re.match(pattern, email))
 
-    def validate_phone(phone):
+    def validate_phone(self, phone):
         """
         Validates if the provided string is a valid phone number.
 
@@ -33,7 +33,7 @@ class DataValidator:
         pattern = r'^\+?\d{10,15}$'  # Regular expression pattern for validating local or international phone numbers(begin with a + sign)
         return bool(re.match(pattern, phone))
 
-    def validate_date(date_str, date_format="%d-%m-%Y"):
+    def validate_date(self, date_str, date_format="%d-%m-%Y"):
         """
         Validates if the provided string matches the given date format.
 
@@ -50,7 +50,7 @@ class DataValidator:
         except ValueError:
             return False
 
-    def validate_url(url):
+    def validate_url(self, url):
         """
         Validates if the provided string is a valid URL.
 
