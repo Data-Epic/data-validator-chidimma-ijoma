@@ -23,7 +23,7 @@ cd Data_Validator_Package
 ## 🛠️ Usage Example
 Here's how to use the Data Validator package:
 ```python
-from data_validator.data_validator import DataValidator
+from data_validator.validator import DataValidator
 
 # Create a DataValidator instance
 validator = DataValidator()
