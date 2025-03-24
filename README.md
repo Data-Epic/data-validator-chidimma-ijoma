@@ -18,6 +18,14 @@ Clone the repository and navigate to the project directory:
 git clone https://github.com/Data-Epic/data-validator-chidimma-ijoma.git
 cd Data_Validator_Package
 ```
+**OR**  
+
+Install the package using Python directly  
+
+```python
+pip install datavalidatorchidimmaijoma==0.1
+```
+
 --- 
 
 ## 🛠️ Usage Example
